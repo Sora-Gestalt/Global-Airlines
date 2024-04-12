@@ -1,0 +1,110 @@
+/* Styles for slideshow */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 25px;
+    color: #1a7fde;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin-top to create space between slideshow and content */
+}
+
+/* About Me section styles */
+.about-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the container to the bottom */
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.about-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    margin-bottom: 15px;
+    letter-spacing: normal; /* Remove letter spacing */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

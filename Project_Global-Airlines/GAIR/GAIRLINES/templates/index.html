@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Airlines</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'gairwelcome.css' %}" type="text/css"> <!-- Link to external CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static '../../../static/img/6.png' %}">
+</head>
+<body>
+    <!-- Container for slideshow and content -->
+    <div class="container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Images for the slideshow -->
+            <img class="slide" src="{% static '../../../static/img/1.jpg' %}" alt="Image 1">
+            <img class="slide" src="{% static '../../../static/img/2.jpg' %}" alt="Image 2">
+            <img class="slide" src="{% static '../../../static/img/3.jpg' %}" alt="Image 3">
+            <img class="slide" src="{% static '../../../static/img/4.jpg' %}" alt="Image 4">
+            <img class="slide" src="{% static '../../../static/img/5.jpg' %}" alt="Image 5">
+            <!-- Add more images as needed -->
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>Global Airlines</h1>
+            <h1>Experience Luxury and Comfort with our Flights</h1>
+            <h2>Check Our Services And Deals Now!</h2>
+            <br>
+            <h3>Use Our Chatbot To Reserve</h3>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- About Me section -->
+    <div class="about-container">
+        <h2>About Global Airlines</h2>
+        <p>Welcome to Global Airlines!</p>
+        <p>At Global Airlines, we are dedicated to providing world-class air travel experiences to our passengers. With a focus on safety, comfort, and convenience, we strive to make every journey a memorable one.</p>
+        <p>As a leading international airline, we connect people and cultures across the globe. Whether you're traveling for business or leisure, our extensive network of routes and modern fleet of aircraft ensures that you reach your destination efficiently and comfortably.</p>
+        <p>Our commitment to excellence extends beyond the skies. We are actively involved in sustainability initiatives to reduce our environmental impact and contribute to a greener future for aviation.</p>
+        <p>Join us on board and experience the unparalleled service and hospitality of Global Airlines. We look forward to serving you on your next adventure!</p>
+    </div>
+
+    <!-- JavaScript for slideshow -->
+    <script>
+        var slideIndex = 0;
+        var slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach(function(slide) {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            showSlide(slideIndex);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+    <!-- Third-party JavaScript (if any) -->
+    <script src="//code.tidio.co/2gidosnhfmq8izlt28uwmxmxdqmz9twv.js" async></script>
+
+</body>
+</html>
